@@ -38,9 +38,7 @@ export default function Dashboard() {
 
               <Link href="/segments/create" passHref>
                 <Button
-                  colorScheme="gray"
-                  color="gray"
-                  fontWeight="500"
+                  colorScheme="blackAlpha"
                   variant="outline"
                   leftIcon={<Icon as={FaPlusCircle} fontSize="18" />}
                 >
