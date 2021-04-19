@@ -7,31 +7,27 @@ import {
   BreadcrumbLink,
   Button,
   Flex,
-  HStack,
-  Icon,
-  Switch,
   Tab,
   TabList,
   TabPanel,
   TabPanels,
   Tabs,
   Text,
+  Input,
+  InputGroup,
+  InputLeftElement,
+	Icon
 } from '@chakra-ui/react';
 import {
   FaChevronDown,
   FaChevronRight,
   FaCog,
   FaFolderMinus,
-  FaPlusCircle,
   FaSortAmountUp,
 } from 'react-icons/fa';
 
 import Link from 'next/link';
-
-import { Header } from '../../components/Header';
-import { Sidebar } from '../../components/Sidebar';
-import { SearchBox } from '../../components/SearchBox';
-import { RiFolder3Fill, RiMenuLine } from 'react-icons/ri';
+import { RiFolder3Fill, RiMenuLine, RiSearchLine } from 'react-icons/ri';
 import { useDrag } from 'react-dnd';
 import MainLayout from "../../components/Layout/MainLayout";
 
@@ -147,7 +143,18 @@ export default function Dashboard() {
                 <TabPanels>
                   <TabPanel>
                     <Flex w="100%" direction="column">
-                      <SearchBox />
+                    <InputGroup>
+                      <InputLeftElement
+                        pointerEvents="none"
+                        children={<Icon as={RiSearchLine} fontSize="15" />}
+                      />
+                      <Input
+                        width="300px"
+                        className="search-box"
+                        variant="outline"
+                        colorScheme="teal"
+                        placeholder="Search" />
+                    </InputGroup>
 
                       <Flex mt="5" direction="column">
                         {true && (

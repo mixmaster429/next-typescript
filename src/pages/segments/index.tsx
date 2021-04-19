@@ -1,7 +1,6 @@
 import {
   Button,
   Flex,
-  HStack,
   Icon,
   Switch,
   Tab,
@@ -13,72 +12,72 @@ import {
 import { FaPlusCircle } from 'react-icons/fa';
 import Link from 'next/link';
 import MainLayout from "../../components/Layout/MainLayout";
+import { OverviewPanel } from './OverviewPanel';
+import { BrowsePanel } from './BrowsePanel';
+
 
 export default function Dashboard() {
   return (
     <MainLayout title="Segments">
-        <Flex w="100%" bg="#e9e9e9" h="91vh" direction="column">
-          <Flex h="12" px="4" align="center" justifyContent="space-between">
-            <h3>Segments</h3>
+      <Flex w="100%" direction="column" className="track-1">
+        <Flex h="12" px="4" align="center" justifyContent="space-between">
+          <h3>Segments</h3>
 
-            <Flex w={400} align="center" justifyContent="space-between">
-              <Switch id="email-alerts" />
-              <span>
-                Add all segments to schedule
+          <Flex w={400} align="center" justifyContent="space-between">
+            <Switch id="email-alerts" />
+            <span>
+              Add all segments to schedule
               </span>
 
-              <Link href="/segments/create" passHref>
-                <Button
-                  colorScheme="blackAlpha"
-                  variant="outline"
-                  leftIcon={<Icon as={FaPlusCircle} fontSize="18" />}
-                >
-                  Create segment
+            <Link href="/segments/create" passHref>
+              <Button
+                colorScheme="blackAlpha"
+                variant="outline"
+                leftIcon={<Icon as={FaPlusCircle} fontSize="18" />}
+              >
+                Create segment
                 </Button>
-              </Link>
-            </Flex>
+            </Link>
           </Flex>
-
-          <Tabs w="100%" size="md">
-            <TabList>
-              <Tab
-                color="#666666"
-                fontSize="sm"
-                _selected={{
-                  color: '#666666',
-
-                  borderBottomColor: '#666666',
-                  borderBottom: '4px solid #666666',
-                }}
-              >
-                Overview
-              </Tab>
-              <Tab
-                color="#666666"
-                fontSize="sm"
-                _selected={{
-                  color: '#666666',
-                  borderBottomColor: '#666666',
-                  borderBottom: '4px solid #666666',
-                }}
-              >
-                Browse
-              </Tab>
-            </TabList>
-
-            <TabPanels>
-              <TabPanel>
-                <p>one!</p>
-              </TabPanel>
-              <TabPanel>
-                <p>two!</p>
-              </TabPanel>
-              <TabPanel>
-                <p>three!</p>
-              </TabPanel>
-            </TabPanels>
-          </Tabs>
         </Flex>
+
+        <Tabs w="100%" size="md">
+          <TabList>
+            <Tab
+              color="#666666"
+              fontSize="sm"
+              _selected={{
+                color: '#666666',
+
+                borderBottomColor: '#666666',
+                borderBottom: '4px solid #666666',
+              }}
+            >
+              Overview
+              </Tab>
+            <Tab
+              color="#666666"
+              fontSize="sm"
+              _selected={{
+                color: '#666666',
+                borderBottomColor: '#666666',
+                borderBottom: '4px solid #666666',
+              }}
+            >
+              Browse
+              </Tab>
+          </TabList>
+
+          <TabPanels>
+            <TabPanel>
+              <OverviewPanel />
+            </TabPanel>
+            <TabPanel>
+              <BrowsePanel />
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
+      </Flex>
     </MainLayout>
   );
 }

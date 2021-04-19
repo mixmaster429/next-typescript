@@ -21,14 +21,13 @@ export default function MainLayout({
         <title>{title}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header action={headerAction}/>
+      <Header action={headerAction} />
       <Flex>
         <Sidebar />
         <Flex direction="column" flex="1">
-          
-            <Box flex="1" h="100%" bg="gray.200" overflowY="auto">
+          <Box flex="1" h="100%" bg="#eaeaea" overflowY="auto">
             {children}
-            </Box>
+          </Box>
         </Flex>
       </Flex>
     </Box>
