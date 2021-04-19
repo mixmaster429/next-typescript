@@ -1,0 +1,11 @@
+.status-bar {
+    background-color: #383838;
+    color: #e0e0e0;
+    padding: 8px;
+
+    & > span {
+        font-weight: bold;
+        margin-right: 16px;
+        font-size: 12px;
+    }
+}
