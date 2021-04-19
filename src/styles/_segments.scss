@@ -1,0 +1,15 @@
+.breakdown {
+    position: relative;
+    .breakdown-bar {
+        width: 100%;
+        height: 20px;
+        background-color: lightgray;
+        cursor: pointer;
+    }
+    .chakra-popover__body {
+        padding: 30px;
+    }
+    .chakra-popover__content {
+        box-shadow: none !important;
+    }
+}
