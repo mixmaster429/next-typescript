@@ -55,7 +55,7 @@ export default function Dashboard() {
             align="center"
             justifyContent="space-between"
           >
-            <h3 style={{ color: '#111', fontWeight: 'bold' }}>Segments</h3>
+            <h2>Segments</h2>
 
             <Flex w={140} align="center" justifyContent="space-between">
               <Link href="/segments" passHref>

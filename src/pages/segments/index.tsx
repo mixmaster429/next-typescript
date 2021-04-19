@@ -22,7 +22,7 @@ export default function Dashboard() {
     <MainLayout title="Segments">
       <Flex w="100%" direction="column">
         <Flex h="12" px="4" align="center" justifyContent="space-between">
-          <h3>Segments</h3>
+          <h2>Segments</h2>
 
           <Flex w={400} align="center" justifyContent="space-between">
             <Switch id="email-alerts" />
