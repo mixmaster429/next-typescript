@@ -1,0 +1,26 @@
+.header {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    & > div, .logo {
+        display: flex;
+        align-items: center;
+    }
+    .logo {
+        padding: 0 15px 0 20px;
+        .text {
+            margin-left: 12px;
+        }
+    }
+    .text {
+        color: $grey;
+    }
+    .icon-hamhurger {
+        color: $grey;
+    }
+    .right-icons {
+        & > button, & > div, & > span {
+            margin: 0 10px;
+        }
+    }
+}
