@@ -7,19 +7,20 @@ import {
   TabList,
   TabPanel,
   TabPanels,
-  Tabs,
+  Tabs
 } from '@chakra-ui/react';
 import { FaPlusCircle } from 'react-icons/fa';
 import Link from 'next/link';
 import MainLayout from "../../components/Layout/MainLayout";
 import { OverviewPanel } from './OverviewPanel';
 import { BrowsePanel } from './BrowsePanel';
+import { Footer } from '../../components/Footer';
 
 
 export default function Dashboard() {
   return (
     <MainLayout title="Segments">
-      <Flex w="100%" direction="column" className="track-1">
+      <Flex w="100%" direction="column">
         <Flex h="12" px="4" align="center" justifyContent="space-between">
           <h3>Segments</h3>
 
@@ -77,6 +78,8 @@ export default function Dashboard() {
             </TabPanel>
           </TabPanels>
         </Tabs>
+
+        <Footer />
       </Flex>
     </MainLayout>
   );

@@ -22,7 +22,7 @@ export default function MainLayout({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header action={headerAction} />
-      <Flex>
+      <Flex className="page">
         <Sidebar />
         <Flex direction="column" flex="1">
           <Box flex="1" h="100%" bg="#eaeaea" overflowY="auto">

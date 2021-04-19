@@ -53,3 +53,11 @@ button[aria-selected="true"] {
 .text-red {
   color: #c41515;
 }
+
+.page {
+  position: relative;
+  height: calc(100vh - 51px);
+  & > div {
+    position: relative;
+  }
+}
