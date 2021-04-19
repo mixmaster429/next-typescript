@@ -1,8 +1,8 @@
 import React, { PropsWithChildren } from "react";
 import Head from "next/head";
 import { Flex, Box } from "@chakra-ui/react";
-import { Header } from "../header";
-import { Sidebar } from "../sidebar";
+import { Header } from "../Header";
+import { Sidebar } from "../Sidebar";
 
 interface MainLayoutProps {
   title: string;

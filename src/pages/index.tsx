@@ -1,5 +1,5 @@
 import { Center } from '@chakra-ui/react';
-import MainLayout from "../components/layout/MainLayout";
+import MainLayout from "../components/Layout/MainLayout";
 
 export default function Home() {
   return (
