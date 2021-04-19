@@ -1,0 +1,18 @@
+<svg id="Single_icon" data-name="Single icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Placement_Area" data-name="Placement Area" fill="red" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0">
+    <rect width="18" height="18" stroke="none"/>
+    <rect x="0.5" y="0.5" width="17" height="17" fill="none"/>
+  </g>
+  <g id="Icon">
+    <g id="Canvas" fill="#6e6e6e" stroke="#6e6e6e" stroke-width="1" opacity="0">
+      <rect width="18" height="18" stroke="none"/>
+      <rect x="0.5" y="0.5" width="17" height="17" fill="none"/>
+    </g>
+    <g id="Ellipse_10222" data-name="Ellipse 10222" transform="translate(1 1)" fill="#6e6e6e" stroke="#6e6e6e" stroke-width="1">
+      <ellipse cx="8" cy="2.5" rx="8" ry="2.5" stroke="none"/>
+      <ellipse cx="8" cy="2.5" rx="7.5" ry="2" fill="none"/>
+    </g>
+    <path id="Path_94151" data-name="Path 94151" d="M9,12.137c-2.468,0-7.106-.585-8-2V14.5C1,15.88,4.582,17,9,17s8-1.12,8-2.5V10.135C15.776,11.682,11.468,12.137,9,12.137Z" fill="#6e6e6e"/>
+    <path id="Path_94152" data-name="Path 94152" d="M9,7.137c-2.468,0-7.106-.584-8-2V8.5C1,9.88,4.582,11,9,11s8-1.12,8-2.5V5.135C15.776,6.682,11.468,7.137,9,7.137Z" fill="#6e6e6e"/>
+  </g>
+</svg>

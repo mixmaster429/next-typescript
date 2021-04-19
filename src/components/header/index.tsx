@@ -2,7 +2,10 @@ import React from "react";
 import { Box, Button, Image } from "@chakra-ui/react";
 import { HamburgerIcon } from '@chakra-ui/icons';
 
-export const Header: React.FC = () => {
+interface HeaderProps {
+  action?: React.ReactNode | null;
+}
+export function Header({ action }: HeaderProps) {
   return (
     <Box bg="header.100" className="header">
       <Box>

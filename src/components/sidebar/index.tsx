@@ -1,10 +1,13 @@
-import React from "react";
-import { Image } from "@chakra-ui/react";
+import {
+  Box
+} from "@chakra-ui/react";
+
+import { SideBarNav } from "./SidebarNav";
 
 export const Sidebar: React.FC = () => {
   return (
-    <div>
-
-    </div>
+    <Box minW="260px" h="100%" p="5">
+      <SideBarNav />
+    </Box>
   );
-};
+}
