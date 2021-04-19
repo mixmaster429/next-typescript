@@ -164,7 +164,29 @@ export const BrowsePanel: React.FC = () => {
               <Td>3/15/2021, 8:01 AM</Td>
               <Td>4/5/2021, 8:01 AM</Td>
             </Tr>
-            
+            <Tr>
+              <Td>Use Case Segment-5a00b724-cfe5-4a54-9593-06c2e89a1310</Td>
+              <Td>
+                <BreakDown />
+              </Td>
+              <Td>0%</Td>
+              <Td>0</Td>
+              <Td>Streaming</Td>
+              <Td>3/15/2021, 8:01 AM</Td>
+              <Td>4/5/2021, 8:01 AM</Td>
+            </Tr>
+            <Tr>
+              <Td>Use Case Segment-5a00b724-cfe5-4a54-9593-06c2e89a1310</Td>
+              <Td>
+                <BreakDown />
+              </Td>
+              <Td>0%</Td>
+              <Td>0</Td>
+              <Td>Streaming</Td>
+              <Td>3/15/2021, 8:01 AM</Td>
+              <Td>4/5/2021, 8:01 AM</Td>
+            </Tr>
+
           </Tbody>
         </Table>
       </Box>

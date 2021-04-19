@@ -3,6 +3,7 @@ import Head from "next/head";
 import { Flex, Box } from "@chakra-ui/react";
 import { Header } from "../Header";
 import { Sidebar } from "../Sidebar";
+import { StatusBar } from "../Statusbar";
 
 interface MainLayoutProps {
   title: string;
@@ -22,6 +23,7 @@ export default function MainLayout({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Header action={headerAction} />
+      <StatusBar />
       <Flex className="page">
         <Sidebar />
         <Flex direction="column" flex="1">
