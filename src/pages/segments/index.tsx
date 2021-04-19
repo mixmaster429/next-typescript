@@ -12,20 +12,11 @@ import {
 } from '@chakra-ui/react';
 import { FaPlusCircle } from 'react-icons/fa';
 import Link from 'next/link';
-
-import { Header } from '../../components/Header';
-import { Sidebar } from '../../components/Sidebar';
+import MainLayout from "../../components/Layout/MainLayout";
 
 export default function Dashboard() {
   return (
-    <Flex direction="column" h="100vh">
-      <Header />
-
-      <Flex w="100%" mx="auto">
-        <HStack ml={5} w={220} align="flex-start">
-          <Sidebar />
-        </HStack>
-
+    <MainLayout title="Segments">
         <Flex w="100%" bg="#e9e9e9" h="91vh" direction="column">
           <Flex h="12" px="4" align="center" justifyContent="space-between">
             <h3>Segments</h3>
@@ -88,7 +79,6 @@ export default function Dashboard() {
             </TabPanels>
           </Tabs>
         </Flex>
-      </Flex>
-    </Flex>
+    </MainLayout>
   );
 }

@@ -11,7 +11,7 @@ body {
   background-color: #f5f5f5 !important;
 }
 
-p.chakra-text {
+p {
   margin-bottom: 0 !important;
 }
 
@@ -33,4 +33,9 @@ button:focus {
 
 button[aria-selected="true"] {
   color: #000000 !important;
+}
+
+.flex-horizontal {
+  display: flex;
+  align-items: center;
 }

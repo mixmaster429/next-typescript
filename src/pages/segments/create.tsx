@@ -33,6 +33,7 @@ import { Sidebar } from '../../components/Sidebar';
 import { SearchBox } from '../../components/SearchBox';
 import { RiFolder3Fill, RiMenuLine } from 'react-icons/ri';
 import { useDrag } from 'react-dnd';
+import MainLayout from "../../components/Layout/MainLayout";
 
 export default function Dashboard() {
   const ref = useRef<HTMLDivElement>(null);
@@ -47,13 +48,7 @@ export default function Dashboard() {
   drag(ref);
 
   return (
-    <Flex direction="column" h="100vh">
-      <Header />
-
-      <Flex w="100%" mx="auto">
-        <HStack ml={5} w={220} align="flex-start">
-          <Sidebar />
-        </HStack>
+    <MainLayout title="Segments">
 
         <Flex w="100%" bg="#e9e9e9" h="91vh" direction="column">
           <Flex
@@ -98,13 +93,14 @@ export default function Dashboard() {
               direction="column"
             >
               <Flex
+                className="flex-horizontal"
                 w="100%"
-                h={10}
+                h={16}
                 align="center"
                 justifyContent="space-between"
                 px="4"
               >
-                <p style={{ color: '#111', fontSize: 14 }}>Fields</p>
+                <p>Fields</p>
 
                 <Icon as={FaCog} fontSize="15" color="#111" />
               </Flex>
@@ -651,7 +647,6 @@ export default function Dashboard() {
             <Flex w="22%"></Flex>
           </Flex>
         </Flex>
-      </Flex>
-    </Flex>
+    </MainLayout>
   );
 }

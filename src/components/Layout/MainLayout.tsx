@@ -25,7 +25,7 @@ export default function MainLayout({
       <Flex>
         <Sidebar />
         <Flex direction="column" flex="1">
-            
+          
             <Box flex="1" h="100%" bg="gray.200" overflowY="auto">
             {children}
             </Box>
